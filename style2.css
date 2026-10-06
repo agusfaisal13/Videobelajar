@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100px;
+  flex-direction: column;
+  margin: 0;
+  background: #eef4f1;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #263b35;
+}
+
+.logo img {
+  display: block;
+  width: 180px;
+  height: auto;
+  margin: 20px 32px 8px;
+}
+
+.section {
+  display: flex;
+  width: min(440px, calc(100% - 32px));
+  flex-direction: column;
+  gap: 16px;
+  margin: auto;
+  padding: 32px;
+  border: 1px solid #d8e4de;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(38, 59, 53, 0.1);
+}
+
+.section > div:first-child {
+  color: #203b34;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.section > div:nth-child(2) {
+  margin-top: -10px;
+  color: #6b7b75;
+}
+
+.section > div:not(:first-child):not(.lupa-password):not(.atau) {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.section label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.required {
+  color: #c94b3c;
+}
+
+.section input {
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 11px;
+  border: 1px solid #cbd8d1;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.lupa-password {
+  text-align: right;
+}
+
+.section a {
+  color: #24796b;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.section button {
+  min-height: 42px;
+  border: 1px solid #cbd8d1;
+  border-radius: 6px;
+  background: #fff;
+  color: #263b35;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.section .btn-daftar {
+  border-color: #24796b;
+  background: #24796b;
+  color: #fff;
+}
+
+.atau {
+  color: #84918c;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 24px 20px;
+  }
+}
